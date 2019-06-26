@@ -1,0 +1,11 @@
+version: '2'
+services:
+  bugtracker-postgresql:
+    image: postgres:11.3
+    # volumes:
+    #     - ~/volumes/jhipster/bugtracker/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=bugtracker
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
